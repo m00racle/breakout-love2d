@@ -7,6 +7,13 @@
     This in order to create programming paradigm inline wiht MVC sofware design pattern.
  ]]
 
+-- GLOBAL CONSTANTS
+WINDOWS_WIDTH = 1200
+WINDOWS_HEIGHT = 720
+
+VIRTUAL_WIDTH = 432
+VIRTUAL_HEIGHT = 243
+
 -- dependencies:
 
 push = require 'lib/push' // https://github.com/Ulydev/push
