@@ -21,3 +21,11 @@ Class = require 'lib/class' // https://github.com/vrld/hump/blob/master/class.lu
     rather tah keeping track of many disparate variable and methods.
  ]]
 
+require 'lib/StateMachine' 
+--[[ StateMachine 
+    basic StateMachine list and processor 
+    which handles to transition to and from game states smoothly 
+    and avoid monolithic code in one file.
+ ]]
+
+--require Base state
