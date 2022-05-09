@@ -9,6 +9,10 @@
 -- declaring the class
 BaseStateHandler = Class{}
 
-function BaseStateHandler:init() end
+-- init required the implementation to state to define the viewer and controller!
+function BaseStateHandler:init(viewer, controller) end
+-- the viewer and controller argument must be a class in the category and assigned to self.viewer and self.controller
 function BaseStateHandler:enter() end
 function BaseStateHandler:exit() end
+function BaseStateHandler:view() end
+function BaseStateHandler:control(dt) end
