@@ -35,4 +35,9 @@ require 'lib/StateMachine'
     and avoid monolithic code in one file.
  ]]
 
+ require 'lib/BaseStateHandler'
+ --[[ 
+     StateHandler superclass needed to handle each state transition from the beginning to the exit of each state.
+  ]]
+
 --require Base state
