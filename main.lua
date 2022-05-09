@@ -40,4 +40,6 @@ require 'lib/StateMachine'
      StateHandler superclass needed to handle each state transition from the beginning to the exit of each state.
   ]]
 
---require Base state
+  -- put the BaseViewer and BaseController interfaces:
+require 'lib/BaseViewer'
+require 'lib/BaseController'
