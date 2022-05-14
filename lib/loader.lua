@@ -64,7 +64,11 @@
     love.keyboard.keysPressed = {}
 
     -- TODO load the states (waiting for each state to be ready)
-    gameStates = StateMachine {}
+    gameStates = StateMachine {
+        ['start'] = function return StartState(StartView, StartViewController) end
+    }
+
+    gameStates:change('start')
 
  end
 
