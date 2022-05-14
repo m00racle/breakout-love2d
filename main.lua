@@ -43,3 +43,6 @@ require 'lib/StateMachine'
   -- put the BaseViewer and BaseController interfaces:
 require 'lib/BaseViewer'
 require 'lib/BaseController'
+
+-- put the loader into the the main
+require 'lib/loader'
