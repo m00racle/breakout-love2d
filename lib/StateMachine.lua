@@ -28,10 +28,10 @@ function StateMachine:change(stateName, enterParams)
 	self.current:enter(enterParams)
 end
 
-function StateMachine:update(dt)
-    self.current:update(dt)
+function StateMachine:control(dt)
+    self.current:control(dt)
 end
 
-function StateMachine:render()
-    self.current:render()
+function StateMachine:view()
+    self.current:view()
 end

@@ -6,4 +6,4 @@
 
  BaseController = Class{}
 
- function BaseController:update(dt)
+ function BaseController:update(dt) end
