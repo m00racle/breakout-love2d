@@ -64,6 +64,7 @@
     love.keyboard.keysPressed = {}
 
     -- TODO load the states (waiting for each state to be ready)
+    gameStates = StateMachine {}
 
  end
 
