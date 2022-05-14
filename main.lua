@@ -42,7 +42,15 @@ require 'lib/StateMachine'
 
   -- put the BaseViewer and BaseController interfaces:
 require 'lib/BaseViewer'
+require 'view/UIViewer'
+require 'view/StartView'
+
 require 'lib/BaseController'
+require 'controller/UIController'
+require 'controller/StartViewController'
+
+--states
+require 'states/StartState'
 
 -- put the loader into the the main
 require 'lib/loader'
