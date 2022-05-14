@@ -4,7 +4,7 @@
 
  function love.update(dt)
     -- this time, we pass in dt to the state object we're currently using
-    gameStates:update(dt)
+    gameStates:control(dt)
 
     -- reset keys pressed
     love.keyboard.keysPressed = {}
