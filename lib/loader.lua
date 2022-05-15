@@ -63,7 +63,7 @@
     -- this will contain the key inputs from the users
     love.keyboard.keysPressed = {}
 
-    -- TODO load the states (waiting for each state to be ready)
+    -- load the states (waiting for each state to be ready)
     gameStates = StateMachine {
         ['start'] = function() return StartState(StartView, StartViewController) end
     }
