@@ -32,6 +32,6 @@ function StateMachine:control(dt)
     self.current:control(dt)
 end
 
-function StateMachine:view()
-    self.current:view()
+function StateMachine:render()
+    self.current:render()
 end

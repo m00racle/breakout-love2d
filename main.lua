@@ -35,11 +35,6 @@ require 'lib/StateMachine'
     and avoid monolithic code in one file.
  ]]
 
- require 'lib/BaseStateHandler'
- --[[ 
-     StateHandler superclass needed to handle each state transition from the beginning to the exit of each state.
-  ]]
-
   -- put the BaseViewer and BaseController interfaces:
 require 'lib/BaseViewer'
 require 'view/UIViewer'
@@ -48,9 +43,6 @@ require 'view/StartView'
 require 'lib/BaseController'
 require 'controller/UIController'
 require 'controller/StartViewController'
-
---states
-require 'states/StartState'
 
 -- put the loader into the the main
 require 'lib/loader'

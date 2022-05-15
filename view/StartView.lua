@@ -10,6 +10,18 @@
  -- thus, I will make status in which it is highlighted 
  local highlighted = 1
 
+ function StartView:init(controller)
+    self.controller = controller
+ end
+
+ function StartView:enter() end
+
+ function StartView:exit() end
+
+ function StartView:control(dt)
+    self.controller:update(dt)
+ end
+
  function StartView:render()
     -- title
     love.graphics.setFont(gameFonts['large'])

@@ -6,4 +6,10 @@
 
  BaseViewer = Class{}
 
- function BaseViewer:render() end
+ -- init required the implementation to state to define the viewer and controller!
+function BaseViewer:init(controller) end
+-- the viewer and controller argument must be a class in the category and assigned to self.viewer and self.controller
+function BaseViewer:enter() end
+function BaseViewer:exit() end
+function BaseViewer:control(dt) end
+function BaseViewer:render() end

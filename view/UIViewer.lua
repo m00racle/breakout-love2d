@@ -23,7 +23,7 @@ function love.draw()
         VIRTUAL_WIDTH/(backgroundwidth - 1), VIRTUAL_HEIGHT/(backgroundHeight - 1))
     
     --  use the state machine to defer rendering to the current state 
-    gameStates:view()
+    gameStates:render()
 
     --  display FPS for debugging -> comment out to reove later on
     displayFPS()
