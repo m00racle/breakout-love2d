@@ -25,7 +25,17 @@ function love.draw()
     --  use the state machine to defer rendering to the current state 
     gameStates:view()
 
-    -- TODO display FPS for debugging -> comment out to reove later on
+    --  display FPS for debugging -> comment out to reove later on
+    displayFPS()
 
     push:apply('end')
+end
+
+function displayFPS() 
+    -- display FPS count in the screen
+    -- just comment out the call if you want to disable this 
+    -- FOR DEBUGGING PURPOSES
+    love.graphics.setFont(gameFonts['small'])
+    love.graphics.setColor(0,1,0,1)
+    love.graphics.print('FPS: ' .. tostring(love.timer.getFPS()), 5, 5)
 end
