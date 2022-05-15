@@ -12,12 +12,12 @@
 
  function StartView:render()
     -- title
-    love.graphics.setFont(gFonts['large'])
+    love.graphics.setFont(gameFonts['large'])
     love.graphics.printf("BREAKOUT", 0, VIRTUAL_HEIGHT / 3,
         VIRTUAL_WIDTH, 'center')
     
     -- instructions
-    love.graphics.setFont(gFonts['medium'])
+    love.graphics.setFont(gameFonts['medium'])
 
     -- if we're highlighting 1, render that option blue
     if highlighted == 1 then

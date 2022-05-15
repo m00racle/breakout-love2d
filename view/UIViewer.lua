@@ -22,7 +22,8 @@ function love.draw()
         -- scale factors on X and Y axis so it fills the screen
         VIRTUAL_WIDTH/(backgroundwidth - 1), VIRTUAL_HEIGHT/(backgroundHeight - 1))
     
-    -- TODO use the stete machine to defer rendering to the current state 
+    --  use the state machine to defer rendering to the current state 
+    gameStates:view()
 
     -- TODO display FPS for debugging -> comment out to reove later on
 
