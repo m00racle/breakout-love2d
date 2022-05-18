@@ -12,6 +12,8 @@
 
  function StartView:init(controller)
     self.controller = controller
+    -- set the viewDelegate as self
+    self.viewDelegate = self
  end
 
  function StartView:enter() end
@@ -19,7 +21,15 @@
  function StartView:exit() end
 
  function StartView:control(dt)
-    self.controller:update(dt)
+    self.controller:update(dt, self.viewDelegate)
+ end
+
+ function StartView:getHighlight()
+    return highlighted
+ end
+
+ function StartView:setHighlight(highlight)
+    highlighted = highlight
  end
 
  function StartView:render()
