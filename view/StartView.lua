@@ -12,6 +12,8 @@
 
  function StartView:init(controller)
     self.controller = controller
+    --set the view params to passed to controller
+    self.viewParams = {} 
  end
 
  function StartView:enter() end
@@ -19,7 +21,9 @@
  function StartView:exit() end
 
  function StartView:control(dt)
-    self.controller:update(dt)
+    self.viewParams = {['highlighted'] = highlighted}
+    self.viewParams = self.controller:update(dt, self.viewParams)
+    highlighted = self.viewParams['highlighted']
  end
 
  function StartView:render()
