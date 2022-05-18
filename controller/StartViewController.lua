@@ -8,8 +8,13 @@
 
 StartViewController = Class{__includes = BaseController}
 
+function StartViewController:init(viewDelegate)
+    self.delegate = viewDelegate
+end
+
 function StartViewController:update(dt)
     -- toggle highlighted option if we press an arrow key up or down
+    highlighted = self.delegate.setHighlight
     if love.keyboard.wasPressed('up') or love.keyboard.wasPressed('down') then
         highlighted = highlighted == 1 and 2 or 1
         gameSounds['paddle-hit']:play()
@@ -19,4 +24,6 @@ function StartViewController:update(dt)
     if love.keyboard.wasPressed('escape') then
         love.event.quit()
     end
+    -- update the highlight in the view delegate
+    self.delegate.setHighlight = highlighted
 end

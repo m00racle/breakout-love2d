@@ -11,7 +11,8 @@
  local highlighted = 1
 
  function StartView:init(controller)
-    self.controller = controller
+    self.controller = controller(self)
+    self.setHighlight = highlighted
  end
 
  function StartView:enter() end
@@ -20,6 +21,7 @@
 
  function StartView:control(dt)
     self.controller:update(dt)
+    highlighted = self.setHighlight
  end
 
  function StartView:render()
