@@ -12,7 +12,7 @@
 
  function StartView:init(controller)
     self.controller = controller(self)
-    self.setHighlight = highlighted
+    
  end
 
  function StartView:enter() end
@@ -21,7 +21,7 @@
 
  function StartView:control(dt)
     self.controller:update(dt)
-    highlighted = self.setHighlight
+    
  end
 
  function StartView:render()
@@ -54,3 +54,12 @@
     love.graphics.setColor(1, 1, 1, 1)
     
  end
+
+--  getter and setter of local variable(s)
+function StartView:getHighlight()
+    return highlighted
+end
+
+function StartView:setHighlight(highlighting)
+    highlighted = highlighting
+end
