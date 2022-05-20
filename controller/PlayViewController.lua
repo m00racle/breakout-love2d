@@ -8,11 +8,11 @@
 
  PlayViewController = Class{__includes = BaseController}
 
-function BaseController:init(viewDelegate) 
+function PlayViewController:init(viewDelegate) 
     self.delegate = viewDelegate
 end
 
-function BaseController:update(dt) 
+function PlayViewController:update(dt) 
     if self.delegate:isPaused() then
         if love.keyboard.wasPressed('space') then
             self.delegate:setPaused(false)
