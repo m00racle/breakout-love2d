@@ -32,6 +32,12 @@
         ['particle'] = love.graphics.newImage('res/graphics/particle.png')
     }
 
+    -- Quads we will generate for all of our textures; 
+    -- Quads allows us to show only part of a textures and not the entire thing.
+    gameFrames = {
+        ['paddles'] = GenerateQuadsPaddles(gameTextures['main'])
+    }
+
     -- set virtual resolution to render within actual windows no matter its dimensions
     push:setupScreen(VIRTUAL_WIDTH, VIRTUAL_HEIGHT, WINDOWS_WIDTH, WINDOWS_HEIGHT, {
         vsync = true,
