@@ -35,6 +35,9 @@ require 'lib/StateMachine'
     and avoid monolithic code in one file.
  ]]
 
+--  lib for util -> handles sprite on render later on
+require 'lib/Util'
+
   -- put the BaseViewer and BaseController interfaces:
 require 'lib/BaseViewer'
 require 'view/UIViewer'
