@@ -65,7 +65,8 @@
 
     -- load the states (waiting for each state to be ready)
     gameStates = StateMachine {
-        ['start'] = function() return StartView(StartViewController) end
+        ['start'] = function() return StartView(StartViewController) end,
+        ['play'] = function() return PlayView(PlayViewController) end
     }
 
     gameStates:change('start')

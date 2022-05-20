@@ -47,6 +47,10 @@ require 'lib/BaseController'
 require 'controller/UIController'
 require 'controller/StartViewController'
 
+-- play states
+require 'view/PlayView'
+require 'controller/PlayViewController'
+
 -- put the loader into the the main
 require 'lib/loader'
 
