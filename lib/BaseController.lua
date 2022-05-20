@@ -6,4 +6,6 @@
 
  BaseController = Class{}
 
+ function BaseController:init(viewDelegate) end
+
  function BaseController:update(dt) end
