@@ -46,3 +46,7 @@ require 'controller/StartViewController'
 
 -- put the loader into the the main
 require 'lib/loader'
+
+-- PUT MODELS:
+-- paddle
+require 'model/Paddle'
