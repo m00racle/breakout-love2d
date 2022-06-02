@@ -44,13 +44,18 @@ function Paddle:init()
     -- the variant is which of the four paddle sizes we currently are; 2
     -- is the starting size, as the smallest is too tough to start with
     self.size = 2
+    
+    -- initialize key movements
+    self.controls = {}
+    self.controls['move left'] = 'left'
+    self.controls['move right'] = 'right'
 end
 
 function Paddle:update(dt)
     -- keyboard input
-    if love.keyboard.isDown('left') then
+    if love.keyboard.isDown(self.controls['move left']) then
         self.dx = -PADDLE_SPEED
-    elseif love.keyboard.isDown('right') then
+    elseif love.keyboard.isDown(self.controls['move right']) then
         self.dx = PADDLE_SPEED
     else
         self.dx = 0

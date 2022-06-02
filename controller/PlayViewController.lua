@@ -18,11 +18,18 @@ function PlayViewController:update(dt)
             self.delegate:setPaused(false)
             gameSounds['pause']:play()
         else
+            -- this will give the ability to quit even in paused condition:
+            if love.keyboard.wasPressed('escape') then
+                love.event.quit()
+            end
+            -- this is what makes in paused state we can't move the paddle:
             return
         end
     elseif love.keyboard.wasPressed('space') then
         self.delegate:setPaused(true)
         gameSounds['pause']:play()
+        -- this though will just put the state out from paused thus it still detect esc quit key
+        -- thus adding if love.keyboard.wasPressed('escape') here is not necessary
         return
     end
 
