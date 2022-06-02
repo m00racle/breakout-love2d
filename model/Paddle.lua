@@ -84,3 +84,10 @@ function Paddle:render()
     love.graphics.draw(gameTextures['main'], gameFrames['paddles'][self.size + 4 * (self.skin - 1)],
         self.x, self.y)
 end
+
+function Paddle:setController(movement, key)
+    -- assert if the movement in question does exist for paddle
+    assert(self.controls[movement]) 
+    -- set the control movement to specific key:
+    self.controls[movement] = key
+end
