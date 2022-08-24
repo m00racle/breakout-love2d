@@ -2,3 +2,5 @@
 
 # macOS related files
 .DS_Store
+.$diagram.drawio.bkp
+.$diagram.drawio.dtmp
