@@ -35,6 +35,9 @@ require 'lib/StateMachine'
     and avoid monolithic code in one file.
  ]]
 
+--  lib for util -> handles sprite on render later on
+require 'lib/Util'
+
   -- put the BaseViewer and BaseController interfaces:
 require 'lib/BaseViewer'
 require 'view/UIViewer'
@@ -44,5 +47,13 @@ require 'lib/BaseController'
 require 'controller/UIController'
 require 'controller/StartViewController'
 
+-- play states
+require 'view/PlayView'
+require 'controller/PlayViewController'
+
 -- put the loader into the the main
 require 'lib/loader'
+
+-- PUT MODELS:
+-- paddle
+require 'model/Paddle'

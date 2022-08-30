@@ -21,6 +21,15 @@ function StartViewController:update(dt)
         gameSounds['paddle-hit']:play()
     end
 
+    -- confirm whichever option we have selected to change screen
+    if love.keyboard.wasPressed('enter') or love.keyboard.wasPressed('return') then
+        gameSounds['confirm']:play()
+
+        if self.delegate:getHighlight() == 1 then
+            gameStates:change('play')
+        end
+    end
+
     -- we no longer have this globally, so include here
     if love.keyboard.wasPressed('escape') then
         love.event.quit()
