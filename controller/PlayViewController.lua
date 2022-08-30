@@ -9,13 +9,13 @@
  PlayViewController = Class{__includes = BaseController}
 
 function PlayViewController:init(viewDelegate) 
-    self.delegate = viewDelegate
+    self.d = viewDelegate -- d for delegate
 end
 
 function PlayViewController:update(dt) 
-    if self.delegate:isPaused() then
+    if self.d:isPaused() then
         if love.keyboard.wasPressed('space') then
-            self.delegate:setPaused(false)
+            self.d:setPaused(false)
             gameSounds['pause']:play()
         else
             -- this will give the ability to quit even in paused condition:
@@ -26,7 +26,7 @@ function PlayViewController:update(dt)
             return
         end
     elseif love.keyboard.wasPressed('space') then
-        self.delegate:setPaused(true)
+        self.d:setPaused(true)
         gameSounds['pause']:play()
         -- this though will just put the state out from paused thus it still detect esc quit key
         -- thus adding if love.keyboard.wasPressed('escape') here is not necessary
@@ -34,14 +34,15 @@ function PlayViewController:update(dt)
     end
 
     -- update the paddle model instance
-    self.delegate.paddle:update(dt)
+    self.d.paddle:update(dt)
 
     -- update the ball model
-    self.delegate.ball:update(dt)
+    self.d.ball:update(dt)
 
     -- detect collision
-    if self.delegate.ball:collides(self.delegate.paddle) then
+    if self.d.ball:collides(self.d.paddle) then
         -- handle collison to paddle.
+        self.d.ball:paddle_bounce()
     end
 
     if love.keyboard.wasPressed('escape') then

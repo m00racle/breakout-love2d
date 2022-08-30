@@ -18,7 +18,7 @@ function PlayView:init(controller)
     self.controller = controller(self)
     -- init the paddle
     self.paddle = Paddle()
-    self.ball = Ball(1, VIRTUAL_WIDTH / 2 - 4, VIRTUAL_HEIGHT - 42)
+    self.ball = Ball(4, VIRTUAL_WIDTH / 2 - 4, VIRTUAL_HEIGHT - 42)
 end
 -- the viewer and controller argument must be a class in the category and assigned to self.viewer and self.controller
 function PlayView:enter() end

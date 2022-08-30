@@ -88,6 +88,12 @@ function Ball:update(dt)
 
 end
 
+function Ball:paddle_bounce()
+    -- this handles vertical bounce when hitting paddle or
+     self.dy = - self.dy
+     gameSounds['paddle-hit']:play()
+end
+
 function Ball:render()
     -- gameTexture is our global texture for all blocks
     -- gameBallFrames is a table of quads mapping to each individual ball skin in the texture.
