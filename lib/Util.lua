@@ -86,3 +86,50 @@ function GenerateQuadsPaddles(atlas)
 
     return quads
 end
+
+--[[ 
+    function GenerateQuadsBalls
+        Parameters: 
+        Atlas : Texture class
+
+        Returns:
+        quads : {Quad} table of quads
+    
+        This cut the atlas to be image Quads which then put into table
+ ]]
+
+ function GenerateQuadsBalls(atlas)
+    local x = 96 -- after 3 tiles (each 32px)
+    local y = 48 -- after 3 tiles (each 16 px high)
+
+    local counter = 1 -- put index counter to Quads inside the table creted below
+    local quads = {} -- prepare the table to store all quads of ball types and skins
+
+    -- we want to take small pairs of balls to be each pair Quad (see notepad)
+    -- the quads images for ball types are divided into two rows.
+
+    -- getting Quads from row 1 Ball is 8 px height 8 px width
+
+    for i = 0, 3 do
+        -- extract the top row ball types
+        -- there are 3 types 
+        quads[counter] = love.graphics.newQuad(x, y, 8, 8, atlas:getDimensions())
+        x = x + 8 -- ball pair width is 8 px
+        counter = counter + 1
+    end
+
+    -- extract the second (bottom) row of ball pairs 
+    x = 96 -- reset the x coordinate to 96
+    y = 56 -- initial y coordinate is 48, add by ball height 8 px = 56 px
+
+    for i = 0, 2 do
+        -- there are two pairs to be extracted as Quad
+        quads[counter] = love.graphics.newQuad(x, y, 8, 8, atlas:getDimensions())
+        -- shift to x by 8 px
+        x = x + 8
+        -- add counter to the next one by 1
+        counter = counter + 1
+    end
+
+    return quads
+end
