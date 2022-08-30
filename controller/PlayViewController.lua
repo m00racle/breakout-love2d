@@ -36,6 +36,14 @@ function PlayViewController:update(dt)
     -- update the paddle model instance
     self.delegate.paddle:update(dt)
 
+    -- update the ball model
+    self.delegate.ball:update(dt)
+
+    -- detect collision
+    if self.delegate.ball:collides(self.delegate.paddle) then
+        -- handle collison to paddle.
+    end
+
     if love.keyboard.wasPressed('escape') then
         love.event.quit()
     end
