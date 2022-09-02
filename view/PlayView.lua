@@ -14,8 +14,11 @@
 local paused = false
 
   -- init required the implementation to state to define the viewer and controller!
-function PlayView:init(controller) 
-    self.controller = controller(self)
+function PlayView:init(controller) -- initialize in the loader.lua passing PlayViewController
+    -- this initialization by passing PlayViewController also init that but with no argument
+
+    self.controller = controller(self) -- here we pass the argument that viewDelegate is the object of this class
+    
     -- init the paddle
     self.paddle = Paddle()
     self.ball = Ball(4, VIRTUAL_WIDTH / 2 - 4, VIRTUAL_HEIGHT - 42)

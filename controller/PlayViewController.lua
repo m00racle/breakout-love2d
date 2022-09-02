@@ -8,7 +8,7 @@
 
  PlayViewController = Class{__includes = BaseController}
 
-function PlayViewController:init(viewDelegate) 
+function PlayViewController:init(viewDelegate) -- this is initialized in PlayView class' object
     self.d = viewDelegate -- d for delegate
 end
 
