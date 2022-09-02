@@ -57,3 +57,4 @@ require 'lib/loader'
 -- PUT MODELS:
 -- paddle
 require 'model/Paddle'
+require 'model/Ball'
