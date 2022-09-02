@@ -11,7 +11,7 @@ StateMachine = Class{}
 function StateMachine:init(states)
     self.empty = {
         render = function() end,
-        update = function() end,
+        control = function() end, -- I change this from update to control only for consitency with control(dt)
         enter = function() end,
         exit = function() end
     }
