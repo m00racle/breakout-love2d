@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e" pages="7">
     <diagram id="C5RBs43oDa-KdzZeNtuy" name="Breakout-1">
-        <mxGraphModel dx="3884" dy="2245" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="2648" dy="1909" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="WIyWlLk6GJQsqaUBKTNV-0"/>
                 <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0"/>
@@ -1178,7 +1178,7 @@
         </mxGraphModel>
     </diagram>
     <diagram name="Breakout-3" id="WEUs6uvTMM-Q3ztJLvLn">
-        <mxGraphModel dx="3884" dy="2245" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="2758" dy="1991" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="MCiE4m1wDiOpMLy1SAd0-0"/>
                 <mxCell id="MCiE4m1wDiOpMLy1SAd0-1" parent="MCiE4m1wDiOpMLy1SAd0-0"/>
@@ -1325,7 +1325,7 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="MCiE4m1wDiOpMLy1SAd0-46" value="file: lua/Dependencies.lua" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="MCiE4m1wDiOpMLy1SAd0-1" vertex="1">
-                    <mxGeometry x="10" y="-10" width="220" height="286" as="geometry">
+                    <mxGeometry x="10" y="-62" width="220" height="338" as="geometry">
                         <mxRectangle x="230" y="-10" width="90" height="26" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
@@ -1359,6 +1359,12 @@
                 <mxCell id="MCiE4m1wDiOpMLy1SAd0-56" value="- require 'src/states/StartState'" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="MCiE4m1wDiOpMLy1SAd0-46" vertex="1">
                     <mxGeometry y="260" width="220" height="26" as="geometry"/>
                 </mxCell>
+                <mxCell id="xT7Vjj4kKMUxCZr_i868-16" value="- require 'src/Brick.lua'" style="text;strokeColor=#006EAF;fillColor=#1ba1e2;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#ffffff;" vertex="1" parent="MCiE4m1wDiOpMLy1SAd0-46">
+                    <mxGeometry y="286" width="220" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="xT7Vjj4kKMUxCZr_i868-38" value="- require 'src/LevelMaker.lua" style="text;strokeColor=#006EAF;fillColor=#1ba1e2;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#ffffff;" vertex="1" parent="MCiE4m1wDiOpMLy1SAd0-46">
+                    <mxGeometry y="312" width="220" height="26" as="geometry"/>
+                </mxCell>
                 <mxCell id="MCiE4m1wDiOpMLy1SAd0-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="MCiE4m1wDiOpMLy1SAd0-1" source="MCiE4m1wDiOpMLy1SAd0-47" target="MCiE4m1wDiOpMLy1SAd0-28" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
@@ -1371,8 +1377,8 @@
                             <mxPoint y="349"/>
                             <mxPoint y="280"/>
                             <mxPoint x="270" y="280"/>
-                            <mxPoint x="270" y="-30"/>
-                            <mxPoint x="120" y="-30"/>
+                            <mxPoint x="270" y="-120"/>
+                            <mxPoint x="120" y="-120"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
@@ -1497,7 +1503,7 @@
                 <mxCell id="MCiE4m1wDiOpMLy1SAd0-97" value="operations" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="MCiE4m1wDiOpMLy1SAd0-93" vertex="1">
                     <mxGeometry y="103" width="300" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="MCiE4m1wDiOpMLy1SAd0-98" value="&amp;nbsp;+ PlayState:init( ): void" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="MCiE4m1wDiOpMLy1SAd0-93" vertex="1">
+                <mxCell id="MCiE4m1wDiOpMLy1SAd0-98" value="&amp;nbsp;+ PlayState:init( ): void" style="text;html=1;strokeColor=#006EAF;fillColor=#1ba1e2;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#ffffff;" parent="MCiE4m1wDiOpMLy1SAd0-93" vertex="1">
                     <mxGeometry y="123" width="300" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="MCiE4m1wDiOpMLy1SAd0-99" value="&amp;nbsp; + PlayState:update( ) : void" style="shape=partialRectangle;html=1;top=1;align=left;dashed=1;" parent="MCiE4m1wDiOpMLy1SAd0-93" vertex="1">
@@ -1633,7 +1639,7 @@
                 <mxCell id="MCiE4m1wDiOpMLy1SAd0-138" value="+ GenerateQuadsBalls(atlas) : {Quads}" style="text;strokeColor=#2D7600;fillColor=#60a917;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#ffffff;" parent="MCiE4m1wDiOpMLy1SAd0-122" vertex="1">
                     <mxGeometry y="343" width="400" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="iwjankG-nm60mrh4q4He-2" value="+ GenerateQuadsBricks(atlas) : {Quads}" style="text;strokeColor=#006EAF;fillColor=#1ba1e2;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#ffffff;" vertex="1" parent="MCiE4m1wDiOpMLy1SAd0-122">
+                <mxCell id="iwjankG-nm60mrh4q4He-2" value="+ GenerateQuadsBricks(atlas) : {Quads}" style="text;strokeColor=#006EAF;fillColor=#1ba1e2;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#ffffff;" parent="MCiE4m1wDiOpMLy1SAd0-122" vertex="1">
                     <mxGeometry y="369" width="400" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="MCiE4m1wDiOpMLy1SAd0-139" value="--[[&#10;    Given an &quot;atlas&quot; (a texture with multiple sprites), as well as a&#10;    width and a height for the tiles therein, split the texture into&#10;    all of the quads by simply dividing it evenly.&#10;]]" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=5;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" parent="MCiE4m1wDiOpMLy1SAd0-1" vertex="1">
@@ -1844,11 +1850,115 @@
                 <mxCell id="QPyupiU5ylkOLGL1NvK3-0" value="CHANGES MADE IN BREAKOUT-3" style="whiteSpace=wrap;html=1;strokeColor=#006EAF;strokeWidth=3;fillColor=#1ba1e2;fontColor=#ffffff;" parent="MCiE4m1wDiOpMLy1SAd0-1" vertex="1">
                     <mxGeometry x="-680" y="1410" width="270" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="iwjankG-nm60mrh4q4He-1" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;dashed=1;jumpStyle=arc;jumpSize=10;" edge="1" parent="MCiE4m1wDiOpMLy1SAd0-1" source="iwjankG-nm60mrh4q4He-0" target="MCiE4m1wDiOpMLy1SAd0-6">
+                <mxCell id="iwjankG-nm60mrh4q4He-1" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;dashed=1;jumpStyle=arc;jumpSize=10;" parent="MCiE4m1wDiOpMLy1SAd0-1" source="iwjankG-nm60mrh4q4He-0" target="MCiE4m1wDiOpMLy1SAd0-6" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="iwjankG-nm60mrh4q4He-0" value="add ['bricks'] table consist of Quads of bricks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="MCiE4m1wDiOpMLy1SAd0-1">
+                <mxCell id="iwjankG-nm60mrh4q4He-0" value="add ['bricks'] table consist of Quads of bricks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="MCiE4m1wDiOpMLy1SAd0-1" vertex="1">
                     <mxGeometry x="230" y="460" width="260" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="xT7Vjj4kKMUxCZr_i868-0" value="breakout3/src/Brick.lua" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#1ba1e2;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="MCiE4m1wDiOpMLy1SAd0-1">
+                    <mxGeometry x="314" y="-810" width="200" height="320" as="geometry"/>
+                </mxCell>
+                <mxCell id="xT7Vjj4kKMUxCZr_i868-4" value="Class: Brick" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="xT7Vjj4kKMUxCZr_i868-0">
+                    <mxGeometry y="26" width="200" height="294" as="geometry"/>
+                </mxCell>
+                <mxCell id="xT7Vjj4kKMUxCZr_i868-5" value="+ self.tier : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xT7Vjj4kKMUxCZr_i868-4">
+                    <mxGeometry y="26" width="200" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="xT7Vjj4kKMUxCZr_i868-8" value="+ self.color : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xT7Vjj4kKMUxCZr_i868-4">
+                    <mxGeometry y="52" width="200" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="xT7Vjj4kKMUxCZr_i868-9" value="+ self.x : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xT7Vjj4kKMUxCZr_i868-4">
+                    <mxGeometry y="78" width="200" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="xT7Vjj4kKMUxCZr_i868-10" value="+ self.y : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xT7Vjj4kKMUxCZr_i868-4">
+                    <mxGeometry y="104" width="200" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="xT7Vjj4kKMUxCZr_i868-11" value="+ self.width : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xT7Vjj4kKMUxCZr_i868-4">
+                    <mxGeometry y="130" width="200" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="xT7Vjj4kKMUxCZr_i868-12" value="+ self.height : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xT7Vjj4kKMUxCZr_i868-4">
+                    <mxGeometry y="156" width="200" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="xT7Vjj4kKMUxCZr_i868-13" value="+ self.inPlay : Boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xT7Vjj4kKMUxCZr_i868-4">
+                    <mxGeometry y="182" width="200" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="xT7Vjj4kKMUxCZr_i868-6" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="xT7Vjj4kKMUxCZr_i868-4">
+                    <mxGeometry y="208" width="200" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="xT7Vjj4kKMUxCZr_i868-7" value="+ Brick : init(x : int , y : int) : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xT7Vjj4kKMUxCZr_i868-4">
+                    <mxGeometry y="216" width="200" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="xT7Vjj4kKMUxCZr_i868-14" value="+ Brick : hit( ) : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xT7Vjj4kKMUxCZr_i868-4">
+                    <mxGeometry y="242" width="200" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="xT7Vjj4kKMUxCZr_i868-15" value="+ Brick : render( ) : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xT7Vjj4kKMUxCZr_i868-4">
+                    <mxGeometry y="268" width="200" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="xT7Vjj4kKMUxCZr_i868-17" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=2;jumpStyle=arc;jumpSize=10;" edge="1" parent="MCiE4m1wDiOpMLy1SAd0-1" source="xT7Vjj4kKMUxCZr_i868-16">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="414" y="-490" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="xT7Vjj4kKMUxCZr_i868-18" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;strokeWidth=2;" edge="1" parent="MCiE4m1wDiOpMLy1SAd0-1" source="MCiE4m1wDiOpMLy1SAd0-6" target="xT7Vjj4kKMUxCZr_i868-4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="xT7Vjj4kKMUxCZr_i868-19" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="MCiE4m1wDiOpMLy1SAd0-1" source="iwjankG-nm60mrh4q4He-2" target="xT7Vjj4kKMUxCZr_i868-9">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="-70" y="1208"/>
+                            <mxPoint x="-70" y="-693"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="xT7Vjj4kKMUxCZr_i868-20" value="breakout3/src/LevelMaker.lua" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#1ba1e2;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="MCiE4m1wDiOpMLy1SAd0-1">
+                    <mxGeometry x="-430" y="-800" width="280" height="164" as="geometry"/>
+                </mxCell>
+                <mxCell id="xT7Vjj4kKMUxCZr_i868-24" value="Class : LevelMaker" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="xT7Vjj4kKMUxCZr_i868-20">
+                    <mxGeometry y="26" width="280" height="138" as="geometry"/>
+                </mxCell>
+                <mxCell id="xT7Vjj4kKMUxCZr_i868-25" value="- Bricks : {Brick} " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xT7Vjj4kKMUxCZr_i868-24">
+                    <mxGeometry y="26" width="280" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="xT7Vjj4kKMUxCZr_i868-28" value="- numRows : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xT7Vjj4kKMUxCZr_i868-24">
+                    <mxGeometry y="52" width="280" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="xT7Vjj4kKMUxCZr_i868-29" value="- numCols : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xT7Vjj4kKMUxCZr_i868-24">
+                    <mxGeometry y="78" width="280" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="xT7Vjj4kKMUxCZr_i868-26" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="xT7Vjj4kKMUxCZr_i868-24">
+                    <mxGeometry y="104" width="280" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="xT7Vjj4kKMUxCZr_i868-27" value="+ LevelMaker.createMap(level : int ) : {Brick} " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xT7Vjj4kKMUxCZr_i868-24">
+                    <mxGeometry y="112" width="280" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="xT7Vjj4kKMUxCZr_i868-30" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;strokeWidth=2;" edge="1" parent="MCiE4m1wDiOpMLy1SAd0-1" source="xT7Vjj4kKMUxCZr_i868-25" target="xT7Vjj4kKMUxCZr_i868-4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="xT7Vjj4kKMUxCZr_i868-32" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;strokeWidth=2;" edge="1" parent="MCiE4m1wDiOpMLy1SAd0-1" source="xT7Vjj4kKMUxCZr_i868-31" target="xT7Vjj4kKMUxCZr_i868-20">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="xT7Vjj4kKMUxCZr_i868-31" value="Level Maker is the one that will create new bricks for certain level&amp;nbsp;&lt;br&gt;This class is instantiated in PlayState.lua" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#006EAF;fillColor=#1ba1e2;fontColor=#ffffff;" vertex="1" parent="MCiE4m1wDiOpMLy1SAd0-1">
+                    <mxGeometry x="-600" y="-910" width="360" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="xT7Vjj4kKMUxCZr_i868-33" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;strokeWidth=2;" edge="1" parent="MCiE4m1wDiOpMLy1SAd0-1" source="MCiE4m1wDiOpMLy1SAd0-98" target="xT7Vjj4kKMUxCZr_i868-25">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="-200" y="705"/>
+                            <mxPoint x="-200" y="-13"/>
+                            <mxPoint x="-630" y="-13"/>
+                            <mxPoint x="-630" y="-735"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="xT7Vjj4kKMUxCZr_i868-35" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;strokeWidth=2;dashed=1;" edge="1" parent="MCiE4m1wDiOpMLy1SAd0-1" source="xT7Vjj4kKMUxCZr_i868-34" target="MCiE4m1wDiOpMLy1SAd0-98">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="xT7Vjj4kKMUxCZr_i868-34" value="PlayState will call LevelMaker to create stacks of Bricks" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#006EAF;fillColor=#1ba1e2;fontColor=#ffffff;" vertex="1" parent="MCiE4m1wDiOpMLy1SAd0-1">
+                    <mxGeometry x="-740" y="770" width="310" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="xT7Vjj4kKMUxCZr_i868-39" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;strokeWidth=2;" edge="1" parent="MCiE4m1wDiOpMLy1SAd0-1" source="xT7Vjj4kKMUxCZr_i868-38" target="xT7Vjj4kKMUxCZr_i868-20">
+                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
