@@ -33,5 +33,6 @@ function Brick:render()
     if self.inPlay then
         -- render the brick quad that is taken from ... gameFrames
         -- TODO: PUT THE quads for all brick types into gameFrames
+        love.graphics.draw(gameTextures['main'], gameFrames['bricks'][1 + ((self.color - 1)*4) + self.tier], self.x, self.y)
     end
 end
