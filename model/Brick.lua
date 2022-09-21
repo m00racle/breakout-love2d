@@ -12,7 +12,7 @@ function Brick:init(x,y)
     self.x = x
     self.y = y
     self.tier = 0
-    self.color = 1
+    self.color = 4
     self.width = 32
     self.height = 16
     self.inPlay = true
