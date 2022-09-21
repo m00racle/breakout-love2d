@@ -22,6 +22,10 @@ function PlayView:init(controller) -- initialize in the loader.lua passing PlayV
     -- init the paddle
     self.paddle = Paddle()
     self.ball = Ball(4, VIRTUAL_WIDTH / 2 - 4, VIRTUAL_HEIGHT - 42)
+
+    -- init the bricks using LevelMaker.createMap()
+    self.bricks = LevelMaker.createMap()
+    -- We don't instantiate Class LevelMaker is this "static" function?
 end
 -- the viewer and controller argument must be a class in the category and assigned to self.viewer and self.controller
 function PlayView:enter() end
@@ -31,11 +35,19 @@ function PlayView:exit() end
 function PlayView:control(dt) 
     self.controller:update(dt)
 end
+
+-- render
 function PlayView:render() 
     self.paddle:render()
 
     -- render the ball
     self.ball:render()
+
+    -- render bricks
+    -- only render bricks with inPlay = true
+    for k, brick in pairs(self.bricks) do
+        brick:render()
+    end
 
     -- pause text if paused
     if paused then

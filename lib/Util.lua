@@ -49,6 +49,13 @@ function table.slice(tbl, first, last, step)
     return sliced
 end
 
+function GenerateQuadsBricks(atlas)
+    -- Now we are using table slices and GenerateQuads to make the Bricks Quads
+    -- this can be done because the Brick size is all the same 32 width and 16 height
+    return table.slice(GenerateQuads(atlas, 32, 16), 1, 21)
+    -- Genereate Quads actually already generate types of Quads for Brick but what does table.slice function is for?
+end
+
 --[[
     This function is specifically made to piece out the paddles from the
     sprite sheet. For this, we have to piece out the paddles a little more
@@ -132,4 +139,5 @@ end
     end
 
     return quads
+
 end

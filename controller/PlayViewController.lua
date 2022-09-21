@@ -39,10 +39,19 @@ function PlayViewController:update(dt)
     -- update the ball model
     self.d.ball:update(dt)
 
-    -- detect collision
+    -- detect collision for ball to paddle
     if self.d.ball:collides(self.d.paddle) then
         -- handle collison to paddle.
         self.d.ball:paddle_bounce()
+    end
+
+    -- check each brick:
+    for k, brick in pairs(self.d.bricks) do
+        -- check collison for inPlay bricks 
+        if brick.inPlay and self.d.ball:collides(brick) then
+            -- trigger brick hit function:
+            brick:hit()
+        end
     end
 
     if love.keyboard.wasPressed('escape') then

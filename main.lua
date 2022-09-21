@@ -58,3 +58,5 @@ require 'lib/loader'
 -- paddle
 require 'model/Paddle'
 require 'model/Ball'
+require 'model/Brick'
+require 'model/LevelMaker'

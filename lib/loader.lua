@@ -36,7 +36,8 @@
     -- Quads allows us to show only part of a textures and not the entire thing.
     gameFrames = {
         ['paddles'] = GenerateQuadsPaddles(gameTextures['main']),
-        ['balls'] = GenerateQuadsBalls(gameTextures['main'])
+        ['balls'] = GenerateQuadsBalls(gameTextures['main']),
+        ['bricks'] = GenerateQuadsBricks(gameTextures['main'])
     }
 
     -- set virtual resolution to render within actual windows no matter its dimensions
