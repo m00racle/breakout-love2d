@@ -22,14 +22,10 @@ This will decide the difficulties levels of the brick structure.
     local bricks = {}
 
     -- random choode the number of rows between 1 to 5
-    -- local numRows = math.random(1,5)
-    -- TEST: numRow constant
-    local numRows = 2
+    local numRows = math.random(1,5)
 
     -- randomly choose number of columns (from 7 to 13)
-    -- local numCols = math.random(7, 13)
-    -- TEST: numCol constant
-    local numCols = 8
+    local numCols = math.random(7, 13)
 
     -- lay out the bricks such that they touch each other and fill the space 
     for y = 1, numRows do 
