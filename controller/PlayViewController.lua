@@ -53,6 +53,9 @@ function PlayViewController:update(dt)
             brick:hit()
             -- call static collision and pass the current brick
             self.d.ball:static_bounce(brick)
+            
+            -- only allowing one brick collison here:
+            break
         end
     end
 

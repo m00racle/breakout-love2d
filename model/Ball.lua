@@ -136,4 +136,7 @@ function Ball:static_bounce(brick)
         self.y = brick.y + brick.height
     end
 
+    -- after collided ball should becoming much faster:
+    self.dy = 1.02 * self.dy
+
 end
