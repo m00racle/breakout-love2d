@@ -88,7 +88,9 @@ function Ball:update(dt)
 
 end
 
-function Ball:paddle_bounce()
+function Ball:inertia_bounce(paddle)
+    -- FIX: make sure ball above in case it hits the paddle side:
+    self.y = paddle.y - self.height
     -- this handles vertical bounce when hitting paddle or
      self.dy = - self.dy
      gameSounds['paddle-hit']:play()

@@ -42,7 +42,7 @@ function PlayViewController:update(dt)
     -- detect collision for ball to paddle
     if self.d.ball:collides(self.d.paddle) then
         -- handle collison to paddle.
-        self.d.ball:paddle_bounce()
+        self.d.ball:inertia_bounce(self.d.paddle)
     end
 
     -- check each brick:
