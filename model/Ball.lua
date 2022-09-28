@@ -93,6 +93,16 @@ function Ball:inertia_bounce(paddle)
     self.y = paddle.y - self.height
     -- this handles vertical bounce when hitting paddle or
      self.dy = - self.dy
+
+    --  if the ball hit the left side (region) of the paddle while moving left
+    if self.x < paddle.x + (paddle.width / 2) and paddle.dx < 0 then
+        self.dx = -50 + -(self.width * (paddle.x + paddle.width / 2 - self.x))
+
+        -- else if we hit the left side paddle while moving right:
+    elseif self.x > paddle.x + (paddle.width / 2) and paddle.dx > 0 then
+        self.dx = 50 + (self.width * math.abs(paddle.x + paddle.width / 2 - self.x))
+    end
+    
      gameSounds['paddle-hit']:play()
 end
 
