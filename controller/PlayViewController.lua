@@ -51,6 +51,8 @@ function PlayViewController:update(dt)
         if brick.inPlay and self.d.ball:collides(brick) then
             -- trigger brick hit function:
             brick:hit()
+            -- call static collision and pass the current brick
+            self.d.ball:static_bounce(brick)
         end
     end
 

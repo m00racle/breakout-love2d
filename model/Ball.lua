@@ -101,3 +101,39 @@ function Ball:render()
     -- gameBallFrames is a table of quads mapping to each individual ball skin in the texture.
     love.graphics.draw(gameTextures['main'], gameFrames['balls'][self.skin], self.x, self.y)
 end
+
+function Ball:static_bounce(brick)
+    -- this will handle brick collision
+    -- check if the brick is collided from which side (right, left, top, bottom)?
+
+    -- collide from left side:
+    if self.x < brick.x and self.dx > 0 then
+        -- if ball's x in the left side (outside) the brick most left x and ball move dx to right:
+        -- flip x velocity and reset position outside of brick
+        self.dx = -self.dx
+        self.x = brick.x - self.width
+
+    -- colide from right side:
+    elseif self.x + self.width > brick.x + brick.width and self.dx < 0 then
+        -- if the right most x of ball is in the right side of the brick's right most x 
+        -- and ball is moving left (dx <0)
+        -- flip x velocity and reset the ball position outside the brick
+        self.dx = -self.dx
+        self.x = brick.x + brick.width
+    
+    -- collides from top:
+    elseif self.y < brick.y then
+        -- if the ball y is above the brick top left y
+        -- no matter the ball move right (dx > 0) of left (dx <0)
+        -- flip the velocitiy and reset position
+        self.dy = - self.dy
+        self.y = brick.y - self.height
+
+    -- collides from bottom (the last possibilities)
+    else
+        -- flip y velocity and reset ball poistion outside the brick (bottom:)
+        self.dy = -self.dy
+        self.y = brick.y + brick.height
+    end
+
+end
