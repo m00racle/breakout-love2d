@@ -6722,10 +6722,10 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="hGN2ptT5kNZizVIA-yfM-216" value="model/Ball.lua" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#1ba1e2;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontColor=#ffffff;strokeColor=#006EAF;" parent="hGN2ptT5kNZizVIA-yfM-1" vertex="1">
-                    <mxGeometry x="1040" y="1250" width="340" height="346" as="geometry"/>
+                    <mxGeometry x="1040" y="1250" width="340" height="372" as="geometry"/>
                 </mxCell>
                 <mxCell id="hGN2ptT5kNZizVIA-yfM-217" value="Ball = Class{}" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="hGN2ptT5kNZizVIA-yfM-216" vertex="1">
-                    <mxGeometry y="26" width="340" height="320" as="geometry"/>
+                    <mxGeometry y="26" width="340" height="346" as="geometry"/>
                 </mxCell>
                 <mxCell id="hGN2ptT5kNZizVIA-yfM-218" value="+ self.width : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="hGN2ptT5kNZizVIA-yfM-217" vertex="1">
                     <mxGeometry y="26" width="340" height="26" as="geometry"/>
@@ -6762,6 +6762,9 @@
                 </mxCell>
                 <mxCell id="hGN2ptT5kNZizVIA-yfM-229" value="+ function Ball:render() : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="hGN2ptT5kNZizVIA-yfM-217" vertex="1">
                     <mxGeometry y="294" width="340" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="UmFFB6NnmhireA9WwMe3-0" value="+ function Ball:static_bounce(b : brick) : void" style="text;strokeColor=#001DBC;fillColor=#0050ef;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#ffffff;" vertex="1" parent="hGN2ptT5kNZizVIA-yfM-217">
+                    <mxGeometry y="320" width="340" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="hGN2ptT5kNZizVIA-yfM-230" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;jumpSize=10;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.192;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;dashed=1;" parent="hGN2ptT5kNZizVIA-yfM-1" source="hGN2ptT5kNZizVIA-yfM-231" target="hGN2ptT5kNZizVIA-yfM-228" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -6938,7 +6941,7 @@
                 <mxCell id="hGN2ptT5kNZizVIA-yfM-279" value="Ball:inertia_bounce(paddle)&lt;br&gt;will handle bounce and inertia. &lt;br&gt;Meaning where the ball hits it will&amp;nbsp;&lt;br&gt;resulting different bounce effect" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#001DBC;fillColor=#0050ef;fontColor=#ffffff;" parent="hGN2ptT5kNZizVIA-yfM-1" vertex="1">
                     <mxGeometry x="1490" y="1732" width="190" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="hGN2ptT5kNZizVIA-yfM-281" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;fillColor=#0050ef;strokeColor=#001DBC;" edge="1" parent="hGN2ptT5kNZizVIA-yfM-1" source="hGN2ptT5kNZizVIA-yfM-194" target="hGN2ptT5kNZizVIA-yfM-227">
+                <mxCell id="hGN2ptT5kNZizVIA-yfM-281" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;fillColor=#0050ef;strokeColor=#001DBC;" parent="hGN2ptT5kNZizVIA-yfM-1" source="hGN2ptT5kNZizVIA-yfM-194" target="hGN2ptT5kNZizVIA-yfM-227" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
                             <mxPoint x="900" y="-659"/>
@@ -6946,14 +6949,28 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="hGN2ptT5kNZizVIA-yfM-282" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;fillColor=#0050ef;strokeColor=#001DBC;" edge="1" parent="hGN2ptT5kNZizVIA-yfM-1" source="hGN2ptT5kNZizVIA-yfM-194" target="hGN2ptT5kNZizVIA-yfM-171">
+                <mxCell id="hGN2ptT5kNZizVIA-yfM-282" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;fillColor=#0050ef;strokeColor=#001DBC;" parent="hGN2ptT5kNZizVIA-yfM-1" source="hGN2ptT5kNZizVIA-yfM-194" target="hGN2ptT5kNZizVIA-yfM-171" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="hGN2ptT5kNZizVIA-yfM-285" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;strokeWidth=2;dashed=1;fillColor=#0050ef;strokeColor=#001DBC;" edge="1" parent="hGN2ptT5kNZizVIA-yfM-1" source="hGN2ptT5kNZizVIA-yfM-284" target="hGN2ptT5kNZizVIA-yfM-194">
+                <mxCell id="hGN2ptT5kNZizVIA-yfM-285" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;strokeWidth=2;dashed=1;fillColor=#0050ef;strokeColor=#001DBC;" parent="hGN2ptT5kNZizVIA-yfM-1" source="hGN2ptT5kNZizVIA-yfM-284" target="hGN2ptT5kNZizVIA-yfM-194" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="hGN2ptT5kNZizVIA-yfM-284" value="Change the paddle_bounce to inertia bounce&amp;nbsp;&lt;br&gt;pass the self.paddle to it" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#001DBC;fillColor=#0050ef;fontColor=#ffffff;" vertex="1" parent="hGN2ptT5kNZizVIA-yfM-1">
+                <mxCell id="hGN2ptT5kNZizVIA-yfM-284" value="Change the paddle_bounce to inertia bounce&amp;nbsp;&lt;br&gt;pass the self.paddle to it" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#001DBC;fillColor=#0050ef;fontColor=#ffffff;" parent="hGN2ptT5kNZizVIA-yfM-1" vertex="1">
                     <mxGeometry x="-700" y="-680" width="260" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="UmFFB6NnmhireA9WwMe3-2" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.794;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;jumpStyle=arc;jumpSize=10;fillColor=#0050ef;strokeColor=#001DBC;" edge="1" parent="hGN2ptT5kNZizVIA-yfM-1" source="hGN2ptT5kNZizVIA-yfM-227" target="hGN2ptT5kNZizVIA-yfM-173">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UmFFB6NnmhireA9WwMe3-3" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;fillColor=#0050ef;strokeColor=#001DBC;" edge="1" parent="hGN2ptT5kNZizVIA-yfM-1" source="UmFFB6NnmhireA9WwMe3-0" target="hGN2ptT5kNZizVIA-yfM-240">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UmFFB6NnmhireA9WwMe3-4" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;strokeWidth=2;fillColor=#0050ef;strokeColor=#001DBC;" edge="1" parent="hGN2ptT5kNZizVIA-yfM-1" source="hGN2ptT5kNZizVIA-yfM-194" target="UmFFB6NnmhireA9WwMe3-0">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="870" y="-659"/>
+                            <mxPoint x="870" y="1609"/>
+                        </Array>
+                    </mxGeometry>
                 </mxCell>
             </root>
         </mxGraphModel>
