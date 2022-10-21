@@ -5883,7 +5883,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="1_7BZYvNpVyAFAY9ZlZM" name="root">
-        <mxGraphModel grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" page="1" fold="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+        <mxGraphModel dx="2830" dy="1864" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
             <root>
                 <mxCell id="Kir-pQ7Plf30Jxdv5sQv-0"/>
                 <mxCell id="Kir-pQ7Plf30Jxdv5sQv-1" parent="Kir-pQ7Plf30Jxdv5sQv-0"/>
@@ -6130,23 +6130,23 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="3-hdzk73jVCYQ6k6zk02-6" value="./model/Ball.lua" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;labelBorderColor=default;" vertex="1" connectable="0" parent="3-hdzk73jVCYQ6k6zk02-9">
+                <mxCell id="3-hdzk73jVCYQ6k6zk02-6" value="./model/Ball.lua" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;labelBorderColor=default;" parent="3-hdzk73jVCYQ6k6zk02-9" vertex="1" connectable="0">
                     <mxGeometry x="-0.3093" y="2" relative="1" as="geometry">
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="3-hdzk73jVCYQ6k6zk02-10" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;fontSize=13;" edge="1" parent="Kir-pQ7Plf30Jxdv5sQv-1" source="nVj3oacCekSPZeMjLsfm-20" target="3-hdzk73jVCYQ6k6zk02-3">
+                <mxCell id="3-hdzk73jVCYQ6k6zk02-10" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;fontSize=13;" parent="Kir-pQ7Plf30Jxdv5sQv-1" source="nVj3oacCekSPZeMjLsfm-20" target="3-hdzk73jVCYQ6k6zk02-3" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="3-hdzk73jVCYQ6k6zk02-11" value="./model/Brick.lua" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;labelBorderColor=default;" vertex="1" connectable="0" parent="3-hdzk73jVCYQ6k6zk02-10">
+                <mxCell id="3-hdzk73jVCYQ6k6zk02-11" value="./model/Brick.lua" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;labelBorderColor=default;" parent="3-hdzk73jVCYQ6k6zk02-10" vertex="1" connectable="0">
                     <mxGeometry x="-0.4583" y="-2" relative="1" as="geometry">
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="3-hdzk73jVCYQ6k6zk02-12" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=13;" edge="1" parent="Kir-pQ7Plf30Jxdv5sQv-1" source="nVj3oacCekSPZeMjLsfm-21" target="3-hdzk73jVCYQ6k6zk02-3">
+                <mxCell id="3-hdzk73jVCYQ6k6zk02-12" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=13;" parent="Kir-pQ7Plf30Jxdv5sQv-1" source="nVj3oacCekSPZeMjLsfm-21" target="3-hdzk73jVCYQ6k6zk02-3" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="3-hdzk73jVCYQ6k6zk02-13" value="./model/LevelMaker.lua" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;labelBorderColor=default;" vertex="1" connectable="0" parent="3-hdzk73jVCYQ6k6zk02-12">
+                <mxCell id="3-hdzk73jVCYQ6k6zk02-13" value="./model/LevelMaker.lua" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;labelBorderColor=default;" parent="3-hdzk73jVCYQ6k6zk02-12" vertex="1" connectable="0">
                     <mxGeometry x="0.1991" relative="1" as="geometry">
                         <mxPoint as="offset"/>
                     </mxGeometry>
@@ -6563,7 +6563,7 @@
                 <mxCell id="RZboRmZwOnQikd7L5mMg-6" value="+ local function new(class)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="RZboRmZwOnQikd7L5mMg-0" vertex="1">
                     <mxGeometry y="138" width="280" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="RZboRmZwOnQikd7L5mMg-7" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=13;startArrow=none;startFill=0;endArrow=classic;endFill=1;startSize=16;endSize=16;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" parent="S8XgVpjmmluVG1lwmc_R-1" source="kwdnCZydLqP-8D08LAxu-0" target="RZboRmZwOnQikd7L5mMg-1" edge="1">
+                <mxCell id="RZboRmZwOnQikd7L5mMg-7" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=13;startArrow=none;startFill=0;endArrow=block;endFill=0;startSize=16;endSize=16;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" parent="S8XgVpjmmluVG1lwmc_R-1" source="kwdnCZydLqP-8D08LAxu-0" target="RZboRmZwOnQikd7L5mMg-1" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
                             <mxPoint x="1670" y="648"/>
@@ -6597,18 +6597,18 @@
                 <mxCell id="sbGQBZaQgtdqN6bK48ls-6" value="+ function BaseController:update(dt) : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sbGQBZaQgtdqN6bK48ls-1">
                     <mxGeometry y="94" width="315" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="sbGQBZaQgtdqN6bK48ls-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;dashed=1;" edge="1" source="sbGQBZaQgtdqN6bK48ls-8" target="sbGQBZaQgtdqN6bK48ls-1" parent="S8XgVpjmmluVG1lwmc_R-1">
+                <mxCell id="sbGQBZaQgtdqN6bK48ls-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.881;entryY=-0.012;entryDx=0;entryDy=0;dashed=1;entryPerimeter=0;" edge="1" source="sbGQBZaQgtdqN6bK48ls-8" target="sbGQBZaQgtdqN6bK48ls-0" parent="S8XgVpjmmluVG1lwmc_R-1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="sbGQBZaQgtdqN6bK48ls-8" value="&lt;div&gt;--[[&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; Base Contorller will handle the update and user inputs on the program runs&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; The implementation of this class must be the 2nd argument to the BaseStateHandler implementation&lt;/div&gt;&lt;div&gt;&amp;nbsp;]]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="S8XgVpjmmluVG1lwmc_R-1">
-                    <mxGeometry x="2040" y="150" width="290" height="120" as="geometry"/>
+                    <mxGeometry x="2040" y="150" width="200" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="sbGQBZaQgtdqN6bK48ls-12" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;entryX=-0.011;entryY=1.062;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="S8XgVpjmmluVG1lwmc_R-1" source="sbGQBZaQgtdqN6bK48ls-1" target="RZboRmZwOnQikd7L5mMg-1">
+                <mxCell id="sbGQBZaQgtdqN6bK48ls-12" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;entryX=-0.011;entryY=1.062;entryDx=0;entryDy=0;entryPerimeter=0;endSize=10;endArrow=block;endFill=0;" edge="1" parent="S8XgVpjmmluVG1lwmc_R-1" source="sbGQBZaQgtdqN6bK48ls-1" target="RZboRmZwOnQikd7L5mMg-1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <UserObject label="lib/BaseViewer.lua" link="https://github.com/m00racle/breakout-love2d/blob/4252b8b24eb45135807b613ae732253518d2ffe4/lib/BaseViewer.lua" id="gah3VVc-3zWIMvfDUq-C-0">
                     <mxCell style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="S8XgVpjmmluVG1lwmc_R-1">
-                        <mxGeometry x="2290" y="460" width="280" height="268" as="geometry">
+                        <mxGeometry x="2260" y="450" width="280" height="268" as="geometry">
                             <mxRectangle x="2945" y="405" width="140" height="30" as="alternateBounds"/>
                         </mxGeometry>
                     </mxCell>
@@ -6643,14 +6643,176 @@
                 <mxCell id="gah3VVc-3zWIMvfDUq-C-10" value="+ function BaseViewer:render() : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="gah3VVc-3zWIMvfDUq-C-1">
                     <mxGeometry y="216" width="280" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="gah3VVc-3zWIMvfDUq-C-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;dashed=1;jumpStyle=arc;jumpSize=10;" edge="1" source="gah3VVc-3zWIMvfDUq-C-12" target="gah3VVc-3zWIMvfDUq-C-0" parent="S8XgVpjmmluVG1lwmc_R-1">
+                <mxCell id="gah3VVc-3zWIMvfDUq-C-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.857;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;dashed=1;jumpStyle=arc;jumpSize=10;entryPerimeter=0;" edge="1" source="gah3VVc-3zWIMvfDUq-C-12" target="gah3VVc-3zWIMvfDUq-C-0" parent="S8XgVpjmmluVG1lwmc_R-1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="gah3VVc-3zWIMvfDUq-C-12" value="&lt;div&gt;--[[&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; Base viewer will handle what is rendered into the the screen&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; the implementation of this class must be put as first argument to the BaseStateHandler implementation class&lt;/div&gt;&lt;div&gt;&amp;nbsp;]]&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="S8XgVpjmmluVG1lwmc_R-1">
-                    <mxGeometry x="2610" y="315" width="190" height="135" as="geometry"/>
+                    <mxGeometry x="2540" y="270" width="190" height="135" as="geometry"/>
                 </mxCell>
-                <mxCell id="gah3VVc-3zWIMvfDUq-C-15" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=13;" edge="1" parent="S8XgVpjmmluVG1lwmc_R-1" source="gah3VVc-3zWIMvfDUq-C-1" target="RZboRmZwOnQikd7L5mMg-1">
+                <mxCell id="gah3VVc-3zWIMvfDUq-C-15" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=13;endArrow=block;endFill=0;endSize=10;" edge="1" parent="S8XgVpjmmluVG1lwmc_R-1" source="gah3VVc-3zWIMvfDUq-C-1" target="RZboRmZwOnQikd7L5mMg-1">
                     <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="jfUe8rAPqeeD6kpC8fmC-0" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;fontSize=13;endArrow=block;endFill=0;endSize=10;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="S8XgVpjmmluVG1lwmc_R-1" source="1drSBm31UgkT4Dmnxuad-0" target="sbGQBZaQgtdqN6bK48ls-0">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="jfUe8rAPqeeD6kpC8fmC-1" value="./controller/StartViewController" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" vertex="1" connectable="0" parent="jfUe8rAPqeeD6kpC8fmC-0">
+                    <mxGeometry x="0.4201" relative="1" as="geometry">
+                        <mxPoint y="41" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="I1vNe9CEGBapNVyzZ3En-0" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;entryX=0;entryY=0.058;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=13;endArrow=block;endFill=0;endSize=10;exitX=0.537;exitY=-0.018;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="S8XgVpjmmluVG1lwmc_R-1" source="1drSBm31UgkT4Dmnxuad-0" target="gah3VVc-3zWIMvfDUq-C-1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="I1vNe9CEGBapNVyzZ3En-1" value="./controller/PlayViewController.lua" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" vertex="1" connectable="0" parent="I1vNe9CEGBapNVyzZ3En-0">
+                    <mxGeometry x="-0.3866" y="-2" relative="1" as="geometry">
+                        <mxPoint y="40" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="1drSBm31UgkT4Dmnxuad-0" value="«controller»&lt;br&gt;&lt;b&gt;Component&lt;/b&gt;" style="html=1;dropTarget=0;" vertex="1" parent="S8XgVpjmmluVG1lwmc_R-1">
+                    <mxGeometry x="2010" y="820" width="350" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="1drSBm31UgkT4Dmnxuad-1" value="" style="shape=module;jettyWidth=8;jettyHeight=4;" vertex="1" parent="1drSBm31UgkT4Dmnxuad-0">
+                    <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+                        <mxPoint x="-27" y="7" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="KLLty3S--8oDdktnYfjX" name="controller">
+        <mxGraphModel dx="2830" dy="1864" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+                <mxCell id="8yQ3sWtiZlqOtMQRWnsn-0"/>
+                <mxCell id="8yQ3sWtiZlqOtMQRWnsn-1" parent="8yQ3sWtiZlqOtMQRWnsn-0"/>
+                <mxCell id="GoOx6hca39rfSbeHnyxp-6" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;fontSize=13;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" parent="8yQ3sWtiZlqOtMQRWnsn-1" source="qhWuIiyJym7f9n8yFklv-0" target="GoOx6hca39rfSbeHnyxp-0" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="GoOx6hca39rfSbeHnyxp-7" value="./main.lua" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" parent="GoOx6hca39rfSbeHnyxp-6" vertex="1" connectable="0">
+                    <mxGeometry x="0.7079" y="4" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="O_MegnD-tlAHaFx1S9HZ-8" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=13;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="8yQ3sWtiZlqOtMQRWnsn-1" source="qhWuIiyJym7f9n8yFklv-0" target="O_MegnD-tlAHaFx1S9HZ-0" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="bER-RiF9876T6NZCRAxr-10" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=13;endArrow=classic;endFill=1;endSize=10;" edge="1" parent="8yQ3sWtiZlqOtMQRWnsn-1" source="qhWuIiyJym7f9n8yFklv-0" target="bER-RiF9876T6NZCRAxr-0">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="bER-RiF9876T6NZCRAxr-11" value="./main.lua" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" vertex="1" connectable="0" parent="bER-RiF9876T6NZCRAxr-10">
+                    <mxGeometry x="0.7914" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="qhWuIiyJym7f9n8yFklv-0" value="«root»&lt;br&gt;&lt;b&gt;Component&lt;/b&gt;" style="html=1;dropTarget=0;" parent="8yQ3sWtiZlqOtMQRWnsn-1" vertex="1">
+                    <mxGeometry x="400" y="120" width="350" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="qhWuIiyJym7f9n8yFklv-1" value="" style="shape=module;jettyWidth=8;jettyHeight=4;" parent="qhWuIiyJym7f9n8yFklv-0" vertex="1">
+                    <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+                        <mxPoint x="-27" y="7" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="GoOx6hca39rfSbeHnyxp-0" value="controller/UIController.lua" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="8yQ3sWtiZlqOtMQRWnsn-1" vertex="1">
+                    <mxGeometry x="950" y="263" width="420" height="104" as="geometry">
+                        <mxRectangle x="950" y="263" width="180" height="30" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="GoOx6hca39rfSbeHnyxp-1" value="+ love.update(dt : int)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="GoOx6hca39rfSbeHnyxp-0" vertex="1">
+                    <mxGeometry y="26" width="420" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="GoOx6hca39rfSbeHnyxp-2" value="+ love.keypressed(key : ?) : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="GoOx6hca39rfSbeHnyxp-0" vertex="1">
+                    <mxGeometry y="52" width="420" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="GoOx6hca39rfSbeHnyxp-3" value="+ love.keyboard.wasPressed(key : ?) : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="GoOx6hca39rfSbeHnyxp-0" vertex="1">
+                    <mxGeometry y="78" width="420" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="GoOx6hca39rfSbeHnyxp-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;jumpSize=10;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.44;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;dashed=1;" parent="8yQ3sWtiZlqOtMQRWnsn-1" source="GoOx6hca39rfSbeHnyxp-5" target="GoOx6hca39rfSbeHnyxp-0" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="GoOx6hca39rfSbeHnyxp-5" value="&lt;div&gt;--[[&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; UIController will act as controller to each state of the game.&lt;/div&gt;&lt;div&gt;basically it contains love2D methods on controls&lt;/div&gt;&lt;div&gt;&amp;nbsp;]]&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="8yQ3sWtiZlqOtMQRWnsn-1" vertex="1">
+                    <mxGeometry x="1040" y="40" width="190" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="GoOx6hca39rfSbeHnyxp-8" value="«lib»&lt;br&gt;&lt;b&gt;Component&lt;/b&gt;" style="html=1;dropTarget=0;" parent="8yQ3sWtiZlqOtMQRWnsn-1" vertex="1">
+                    <mxGeometry x="350" y="359" width="350" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="GoOx6hca39rfSbeHnyxp-9" value="" style="shape=module;jettyWidth=8;jettyHeight=4;" parent="GoOx6hca39rfSbeHnyxp-8" vertex="1">
+                    <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+                        <mxPoint x="-27" y="7" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <UserObject label="controller/StartViewController.lua" link="https://github.com/m00racle/breakout-love2d/blob/80ce9d67df8f3b548f7a8c0c3c8a24223c4bb284/controller/StartViewController.lua" id="O_MegnD-tlAHaFx1S9HZ-0">
+                    <mxCell style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="8yQ3sWtiZlqOtMQRWnsn-1" vertex="1">
+                        <mxGeometry x="740" y="540" width="390" height="112" as="geometry">
+                            <mxRectangle x="1030" y="770" width="220" height="30" as="alternateBounds"/>
+                        </mxGeometry>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="O_MegnD-tlAHaFx1S9HZ-1" value="StartViewController = Class{__includes = BaseController}" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="O_MegnD-tlAHaFx1S9HZ-0" vertex="1">
+                    <mxGeometry y="26" width="390" height="86" as="geometry"/>
+                </mxCell>
+                <mxCell id="O_MegnD-tlAHaFx1S9HZ-2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="O_MegnD-tlAHaFx1S9HZ-1" vertex="1">
+                    <mxGeometry y="26" width="390" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="O_MegnD-tlAHaFx1S9HZ-3" value="+ StartViewController:init(viewDelegate : ?)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="O_MegnD-tlAHaFx1S9HZ-1" vertex="1">
+                    <mxGeometry y="34" width="390" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="O_MegnD-tlAHaFx1S9HZ-4" value="+ StartViewController:update(dt : int)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="O_MegnD-tlAHaFx1S9HZ-1" vertex="1">
+                    <mxGeometry y="60" width="390" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="O_MegnD-tlAHaFx1S9HZ-5" value="&lt;br&gt;&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 14px ; line-height: 19px&quot;&gt;&lt;div&gt;--[[&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; StartViewController&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; This is the class that handles controller for StartView&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; - update the view&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; - handle user inputs&lt;/div&gt;&lt;div&gt;&amp;nbsp;]]&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="8yQ3sWtiZlqOtMQRWnsn-1" vertex="1">
+                    <mxGeometry x="1290" y="469" width="260" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="O_MegnD-tlAHaFx1S9HZ-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;jumpSize=10;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.001;entryY=0.152;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;dashed=1;" parent="8yQ3sWtiZlqOtMQRWnsn-1" source="O_MegnD-tlAHaFx1S9HZ-5" target="O_MegnD-tlAHaFx1S9HZ-0" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4kRAzxDrOR2Xatk9dp6O-3" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;fontSize=13;endArrow=block;endFill=0;endSize=10;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="8yQ3sWtiZlqOtMQRWnsn-1" source="O_MegnD-tlAHaFx1S9HZ-1" target="GoOx6hca39rfSbeHnyxp-8" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4kRAzxDrOR2Xatk9dp6O-4" value="./lib/BaseContoller.lua" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" parent="4kRAzxDrOR2Xatk9dp6O-3" vertex="1" connectable="0">
+                    <mxGeometry x="-0.1773" y="-3" relative="1" as="geometry">
+                        <mxPoint x="-29" y="-18" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <UserObject label="controller/PlayViewController.lua" link="https://github.com/m00racle/breakout-love2d/blob/bbff8c18a8abb7b9c0b35f7b44d7834d2a9eeef3/controller/PlayViewController.lua" id="bER-RiF9876T6NZCRAxr-0">
+                    <mxCell style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="8yQ3sWtiZlqOtMQRWnsn-1">
+                        <mxGeometry x="-240" y="255" width="370" height="104" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="bER-RiF9876T6NZCRAxr-1" value="PlayViewController = Class{__includes = BaseController}" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="bER-RiF9876T6NZCRAxr-0">
+                    <mxGeometry y="26" width="370" height="78" as="geometry">
+                        <mxRectangle y="26" width="370" height="30" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="bER-RiF9876T6NZCRAxr-2" value="+ PlayViewController:init(viewDelegate : delegate?) : void " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="bER-RiF9876T6NZCRAxr-1">
+                    <mxGeometry y="26" width="370" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="bER-RiF9876T6NZCRAxr-3" value="+ PlayViewController:update(dt : int) : void" style="text;strokeColor=#001DBC;fillColor=#0050ef;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#ffffff;" vertex="1" parent="bER-RiF9876T6NZCRAxr-1">
+                    <mxGeometry y="52" width="370" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="bER-RiF9876T6NZCRAxr-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;jumpSize=10;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;dashed=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" source="bER-RiF9876T6NZCRAxr-5" target="bER-RiF9876T6NZCRAxr-0" parent="8yQ3sWtiZlqOtMQRWnsn-1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="bER-RiF9876T6NZCRAxr-5" value="&lt;div&gt;--[[&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; PlayViewController class&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; This is the callback and delegate class for the PlayView class&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; Just init this and put self as parameter argument&lt;/div&gt;&lt;div&gt;&amp;nbsp;]]&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="8yQ3sWtiZlqOtMQRWnsn-1">
+                    <mxGeometry x="-40" y="-102" width="150" height="142" as="geometry"/>
+                </mxCell>
+                <mxCell id="bER-RiF9876T6NZCRAxr-6" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.495;entryY=0.996;entryDx=0;entryDy=0;entryPerimeter=0;fontColor=#FFFFFF;dashed=1;strokeWidth=2;fillColor=#60a917;strokeColor=#2D7600;jumpStyle=arc;jumpSize=10;" edge="1" source="bER-RiF9876T6NZCRAxr-3" target="bER-RiF9876T6NZCRAxr-7" parent="8yQ3sWtiZlqOtMQRWnsn-1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="bER-RiF9876T6NZCRAxr-7" value="&amp;nbsp;&amp;nbsp;&lt;span style=&quot;font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 14px&quot;&gt;-- check each brick:&lt;/span&gt;&lt;div style=&quot;font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 14px ; line-height: 19px&quot;&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; for k, brick in pairs(self.d.bricks) do&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; -- check collison for inPlay bricks &lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; if brick.inPlay and self.d.ball:collides(brick) then&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; -- trigger brick hit function:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; brick:hit()&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; end&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; end&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#2D7600;fillColor=#60a917;fontColor=#ffffff;" vertex="1" parent="8yQ3sWtiZlqOtMQRWnsn-1">
+                    <mxGeometry x="-630" y="10" width="480" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="bER-RiF9876T6NZCRAxr-8" value="Change the paddle_bounce to inertia bounce&amp;nbsp;&lt;br&gt;pass the self.paddle to it" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#001DBC;fillColor=#0050ef;fontColor=#ffffff;" vertex="1" parent="8yQ3sWtiZlqOtMQRWnsn-1">
+                    <mxGeometry x="-510" y="450" width="260" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="bER-RiF9876T6NZCRAxr-9" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;strokeWidth=2;dashed=1;fillColor=#0050ef;strokeColor=#001DBC;" edge="1" source="bER-RiF9876T6NZCRAxr-8" target="bER-RiF9876T6NZCRAxr-3" parent="8yQ3sWtiZlqOtMQRWnsn-1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="bER-RiF9876T6NZCRAxr-12" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;fontSize=13;endArrow=block;endFill=0;endSize=10;exitX=1.001;exitY=0.146;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="8yQ3sWtiZlqOtMQRWnsn-1" source="bER-RiF9876T6NZCRAxr-1" target="GoOx6hca39rfSbeHnyxp-8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="bER-RiF9876T6NZCRAxr-13" value="./lib/BaseViewer.lua" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" vertex="1" connectable="0" parent="bER-RiF9876T6NZCRAxr-12">
+                    <mxGeometry x="-0.2923" y="-3" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
                 </mxCell>
             </root>
         </mxGraphModel>
