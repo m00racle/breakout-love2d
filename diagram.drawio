@@ -3372,9 +3372,11 @@
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="i0I5-Yn9pPZEE3O2fiAL-0" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=11;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;fontSize=13;endArrow=classic;endFill=1;startSize=6;endSize=14;" parent="avX0G1JYAIxMmgXQahy_-1" source="D11OsCxGCPfxwzAgMucD-3" target="hX_fYnZSlWeOlUk6RxlP-0" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
+                <UserObject label="" link="data:page/id,2iqYIbr-k2pbV4ATYCuP" id="i0I5-Yn9pPZEE3O2fiAL-0">
+                    <mxCell style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=11;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;fontSize=13;endArrow=classic;endFill=1;startSize=6;endSize=14;" parent="avX0G1JYAIxMmgXQahy_-1" source="D11OsCxGCPfxwzAgMucD-3" target="hX_fYnZSlWeOlUk6RxlP-0" edge="1">
+                        <mxGeometry relative="1" as="geometry"/>
+                    </mxCell>
+                </UserObject>
                 <mxCell id="i0I5-Yn9pPZEE3O2fiAL-1" value="lib\BaseController.lua" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" parent="i0I5-Yn9pPZEE3O2fiAL-0" vertex="1" connectable="0">
                     <mxGeometry x="-0.1941" y="3" relative="1" as="geometry">
                         <mxPoint as="offset"/>
@@ -3515,6 +3517,39 @@
                     <mxGeometry x="0.5449" y="-2" relative="1" as="geometry">
                         <mxPoint as="offset"/>
                     </mxGeometry>
+                </mxCell>
+                <UserObject label="view/ServerView.lua" id="rsw31Tlgd7OfPsb7hNU5-0">
+                    <mxCell style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="avX0G1JYAIxMmgXQahy_-1">
+                        <mxGeometry x="1580" y="680" width="370" height="164" as="geometry">
+                            <mxRectangle x="1950" y="-310" width="140" height="26" as="alternateBounds"/>
+                        </mxGeometry>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="rsw31Tlgd7OfPsb7hNU5-1" value="&lt;&lt; Class &gt;&gt; ServerView: BaseViewer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="rsw31Tlgd7OfPsb7hNU5-0">
+                    <mxGeometry y="26" width="370" height="138" as="geometry">
+                        <mxRectangle y="52" width="370" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rsw31Tlgd7OfPsb7hNU5-2" value="attribute : type" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rsw31Tlgd7OfPsb7hNU5-1">
+                    <mxGeometry y="26" width="370" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="rsw31Tlgd7OfPsb7hNU5-3" value="+ attribute : type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rsw31Tlgd7OfPsb7hNU5-1">
+                    <mxGeometry y="52" width="370" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="rsw31Tlgd7OfPsb7hNU5-4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="rsw31Tlgd7OfPsb7hNU5-1">
+                    <mxGeometry y="78" width="370" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="rsw31Tlgd7OfPsb7hNU5-5" value="method(type): type" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rsw31Tlgd7OfPsb7hNU5-1">
+                    <mxGeometry y="86" width="370" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="rsw31Tlgd7OfPsb7hNU5-6" value="+ method(params) : type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="rsw31Tlgd7OfPsb7hNU5-1">
+                    <mxGeometry y="112" width="370" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="sqqHBYqOXZ4IiEXYmkWN-1" style="edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=10;html=1;entryX=0.998;entryY=0.099;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;startSize=14;endSize=14;" edge="1" parent="avX0G1JYAIxMmgXQahy_-1" source="sqqHBYqOXZ4IiEXYmkWN-0" target="rsw31Tlgd7OfPsb7hNU5-1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="sqqHBYqOXZ4IiEXYmkWN-0" value="TODO: put the Server View from the link to this ServerView&lt;br&gt;NOTE: WE GET TO SEPARATE THE VIEW WITH THE CONTROLER (update)&lt;br&gt;The different here is that it does not have init but enter" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="avX0G1JYAIxMmgXQahy_-1">
+                    <mxGeometry x="2090" y="590" width="300" height="170" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
