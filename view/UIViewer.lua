@@ -39,3 +39,18 @@ function displayFPS()
     love.graphics.setColor(0,1,0,1)
     love.graphics.print('FPS: ' .. tostring(love.timer.getFPS()), 5, 5)
 end
+
+function renderHealth(health)
+    -- render heart based on the value of the health
+    local healthX = VIRTUAL_WIDTH - 100
+
+    -- render health left:
+    for i=1, health do
+        -- render light colored heart
+    end
+
+    for i=1, maxHealth - health do
+        -- render black colored heart
+        -- TODO: change 3 into MAX_HEALTH for further 
+    end
+end

@@ -14,6 +14,9 @@ WINDOWS_HEIGHT = 720
 VIRTUAL_WIDTH = 432
 VIRTUAL_HEIGHT = 243
 
+-- GLOBAL init variable
+maxHealth = 3
+
 -- dependencies:
 
 push = require 'lib/push' -- https://github.com/Ulydev/push
