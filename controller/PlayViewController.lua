@@ -61,6 +61,27 @@ function PlayViewController:update(dt)
         end
     end
 
+    -- if ball goes below the lower bound of the game screen:
+    if self.d.ball.y >= VIRTUAL_HEIGHT then
+        -- reduce the health
+        -- play SFX hurt
+        self.d.health = self.d.health - 1
+        gameSounds['hurt']:play()
+
+        -- if the health is still exist (bigger than 0) then go to serve state
+        if self.d.health > 0 then
+            -- go to serve state
+            gameStates:change('serve', {
+                paddle = self.d.paddle,
+                bricks = self.d.bricks,
+                health = self.d.health,
+                score = self.d.score
+            })
+        else
+            -- go to game over
+        end
+    end
+
     if love.keyboard.wasPressed('escape') then
         esc_key()
     end
