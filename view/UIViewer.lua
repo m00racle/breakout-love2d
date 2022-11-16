@@ -47,10 +47,21 @@ function renderHealth(health)
     -- render health left:
     for i=1, health do
         -- render light colored heart
+        love.graphics.draw(gameTextures['hearts'], gameFrames['hearts'][1], healthX, 4)
+        -- shift the healthX for the next heart: give it heart widht plus 1 pixel
+        healthX = healthX + 11 
     end
 
     for i=1, maxHealth - health do
         -- render black colored heart
-        -- TODO: change 3 into MAX_HEALTH for further 
+        love.graphics.draw(gameTextures['hearts'], gameFrames['hearts'][2], healthX, 4)
+        -- shift the healthX for the next heart:
+        healthX = healthX + 11 
     end
+end
+
+function renderScore(score)
+    love.graphics.setFont(gameFonts['small'])
+    love.graphics.print('Score: ', VIRTUAL_WIDTH - 60, 5)
+    love.graphics.printf(tostring(score), VIRTUAL_WIDTH - 50, 5, 40, 'right')
 end
