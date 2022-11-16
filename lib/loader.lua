@@ -37,7 +37,9 @@
     gameFrames = {
         ['paddles'] = GenerateQuadsPaddles(gameTextures['main']),
         ['balls'] = GenerateQuadsBalls(gameTextures['main']),
-        ['bricks'] = GenerateQuadsBricks(gameTextures['main'])
+        ['bricks'] = GenerateQuadsBricks(gameTextures['main']),
+        -- we have our own textures for hearts we just use that not the main texture
+        ['hearts'] = GenerateQuads(gameTextures['hearts'], 10, 9)
     }
 
     -- set virtual resolution to render within actual windows no matter its dimensions
