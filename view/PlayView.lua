@@ -19,16 +19,15 @@ function PlayView:init(controller) -- initialize in the loader.lua passing PlayV
 
     self.controller = controller(self) -- here we pass the argument that viewDelegate is the object of this class
     
-    -- init the paddle
-    self.paddle = Paddle()
-    self.ball = Ball(4, VIRTUAL_WIDTH / 2 - 4, VIRTUAL_HEIGHT - 42)
-
-    -- init the bricks using LevelMaker.createMap()
-    self.bricks = LevelMaker.createMap()
-    -- We don't instantiate Class LevelMaker is this "static" function?
 end
 -- the viewer and controller argument must be a class in the category and assigned to self.viewer and self.controller
-function PlayView:enter() end
+function PlayView:enter(params)
+    self.paddle = params.paddle
+    self.bricks = params.bricks
+    self.health = params.health
+    self.score = params.score
+    self.ball = params.ball
+end
 function PlayView:exit() end
 
 -- controls:
@@ -48,6 +47,10 @@ function PlayView:render()
     for k, brick in pairs(self.bricks) do
         brick:render()
     end
+
+    renderHealth(self.health)
+
+    renderScore(self.score)
 
     -- pause text if paused
     if paused then
