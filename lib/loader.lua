@@ -76,7 +76,8 @@
     -- load the states (waiting for each state to be ready)
     gameStates = StateMachine {
         ['start'] = function() return StartView(StartViewController) end,
-        ['play'] = function() return PlayView(PlayViewController) end
+        ['play'] = function() return PlayView(PlayViewController) end,
+        ['serve'] = function() return ServeView(ServeViewController) end
     }
 
     gameStates:change('start')
@@ -87,4 +88,8 @@
  function love.resize(w,h)
     -- push it to resize
     push:resize(w,h)
+ end
+
+ function esc_key()
+    love.event.quit()
  end

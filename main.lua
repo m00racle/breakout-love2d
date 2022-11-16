@@ -63,3 +63,7 @@ require 'model/Paddle'
 require 'model/Ball'
 require 'model/Brick'
 require 'model/LevelMaker'
+
+-- put serve:
+require 'view/ServeView'
+require 'controller/ServeViewController'

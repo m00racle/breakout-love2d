@@ -26,13 +26,18 @@ function StartViewController:update(dt)
         gameSounds['confirm']:play()
 
         if self.delegate:getHighlight() == 1 then
-            gameStates:change('play')
+            gameStates:change('serve', {
+                paddle = Paddle(),
+                bricks = LevelMaker.createMap(),
+                health = maxHealth,
+                score = 0
+            })
         end
     end
 
     -- we no longer have this globally, so include here
     if love.keyboard.wasPressed('escape') then
-        love.event.quit()
+        esc_key()
     end
     -- update the highlight in the view delegate
     
