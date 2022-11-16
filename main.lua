@@ -67,3 +67,7 @@ require 'model/LevelMaker'
 -- put serve:
 require 'view/ServeView'
 require 'controller/ServeViewController'
+
+-- put game over:
+require 'view/GameOverView'
+require 'controller/OverViewController'
