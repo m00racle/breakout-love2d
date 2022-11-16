@@ -79,6 +79,7 @@ function PlayViewController:update(dt)
             })
         else
             -- go to game over
+            gameStates:change('game-over', {score = self.d.score})
         end
     end
 

@@ -77,7 +77,8 @@
     gameStates = StateMachine {
         ['start'] = function() return StartView(StartViewController) end,
         ['play'] = function() return PlayView(PlayViewController) end,
-        ['serve'] = function() return ServeView(ServeViewController) end
+        ['serve'] = function() return ServeView(ServeViewController) end,
+        ['game-over'] = function() return GameOverView(OverViewController) end
     }
 
     gameStates:change('start')
