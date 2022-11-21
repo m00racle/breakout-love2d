@@ -37,7 +37,9 @@
     gameFrames = {
         ['paddles'] = GenerateQuadsPaddles(gameTextures['main']),
         ['balls'] = GenerateQuadsBalls(gameTextures['main']),
-        ['bricks'] = GenerateQuadsBricks(gameTextures['main'])
+        ['bricks'] = GenerateQuadsBricks(gameTextures['main']),
+        -- we have our own textures for hearts we just use that not the main texture
+        ['hearts'] = GenerateQuads(gameTextures['hearts'], 10, 9)
     }
 
     -- set virtual resolution to render within actual windows no matter its dimensions
@@ -74,7 +76,9 @@
     -- load the states (waiting for each state to be ready)
     gameStates = StateMachine {
         ['start'] = function() return StartView(StartViewController) end,
-        ['play'] = function() return PlayView(PlayViewController) end
+        ['play'] = function() return PlayView(PlayViewController) end,
+        ['serve'] = function() return ServeView(ServeViewController) end,
+        ['game-over'] = function() return GameOverView(OverViewController) end
     }
 
     gameStates:change('start')
@@ -85,4 +89,8 @@
  function love.resize(w,h)
     -- push it to resize
     push:resize(w,h)
+ end
+
+ function esc_key()
+    love.event.quit()
  end

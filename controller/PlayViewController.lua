@@ -51,6 +51,8 @@ function PlayViewController:update(dt)
         if brick.inPlay and self.d.ball:collides(brick) then
             -- trigger brick hit function:
             brick:hit()
+            -- add score (TODO: temp is constant point of 10)
+            self.d.score = self.d.score + 10
             -- call static collision and pass the current brick
             self.d.ball:static_bounce(brick)
             
@@ -59,7 +61,29 @@ function PlayViewController:update(dt)
         end
     end
 
+    -- if ball goes below the lower bound of the game screen:
+    if self.d.ball.y >= VIRTUAL_HEIGHT then
+        -- reduce the health
+        -- play SFX hurt
+        self.d.health = self.d.health - 1
+        gameSounds['hurt']:play()
+
+        -- if the health is still exist (bigger than 0) then go to serve state
+        if self.d.health > 0 then
+            -- go to serve state
+            gameStates:change('serve', {
+                paddle = self.d.paddle,
+                bricks = self.d.bricks,
+                health = self.d.health,
+                score = self.d.score
+            })
+        else
+            -- go to game over
+            gameStates:change('game-over', {score = self.d.score})
+        end
+    end
+
     if love.keyboard.wasPressed('escape') then
-        love.event.quit()
+        esc_key()
     end
 end
