@@ -27,6 +27,14 @@ function Brick:hit()
     self.inPlay = false
 end
 
+function Brick:setColor(color)
+    self.color = color
+end
+
+function Brick:setTier(tier)
+    self.tier = tier
+end
+
 function Brick:render()
     -- TODO: what to render
     -- if brick is still inPlay then 
