@@ -28,7 +28,7 @@ function StartViewController:update(dt)
         if self.delegate:getHighlight() == 1 then
             gameStates:change('serve', {
                 paddle = Paddle(),
-                bricks = LevelMaker.createMap(),
+                bricks = LevelMaker.createMap(15),
                 health = maxHealth,
                 score = 0
             })
