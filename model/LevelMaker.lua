@@ -9,6 +9,17 @@ Returns table of BRICK type objects.
 This will decide the difficulties levels of the brick structure.
  ]]
 
+--  Global patterns (used to make the entire map a certain shape)
+NONE = 1
+SINGLE_PYRAMID = 2
+MULTI_PYRAMID = 3
+
+-- per row patterns:
+SOLID = 1 -- all colors the same in this row
+ALTERNATE = 2 -- alternate colors on this row
+SKIP = 3 -- skip every other block
+NONE = 4 -- no block in this row
+
  LevelMaker = Class{}
 
  --[[ 
@@ -24,8 +35,12 @@ This will decide the difficulties levels of the brick structure.
     -- random choode the number of rows between 1 to 5
     local numRows = math.random(1,5)
 
-    -- randomly choose number of columns (from 7 to 13)
+    -- randomly choose number of columns (from 7 to 13) but NOW IT MUST BE ODD NUMBERS  :
     local numCols = math.random(7, 13)
+    -- if (numCols % 2 == 0) then
+    --   numCols = numCols + 1
+    -- end
+    numCols = numCols % 2 == 0 and (numCols + 1) or numCols
 
     -- lay out the bricks such that they touch each other and fill the space 
     for y = 1, numRows do 
