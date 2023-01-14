@@ -6,16 +6,63 @@
 ]]
 
 Brick = Class{}
+-- let's try make the pallete color table to be local
+local palleteColors = {
+    -- blue color brick
+    [1] = {
+        ['r'] = 99,
+        ['g'] = 155,
+        ['b'] = 255
+    },
+    -- green color brick
+    [2] = {
+        ['r'] = 106,
+        ['g'] = 190,
+        ['b'] = 47
+    },
+    -- red color brick
+    [3] = {
+        ['r'] = 217,
+        ['g'] = 87,
+        ['b'] = 99
+    },
+    -- purple color brick
+    [4] = {
+        ['r'] = 215,
+        ['g'] = 123,
+        ['b'] = 186
+    },
+    -- gold color brick
+    [5] = {
+        ['r'] = 251,
+        ['g'] = 242,
+        ['b'] = 54
+    }
+}
 
 function Brick:init(x,y)
     -- : put each variables thier initial values. 
     self.x = x
     self.y = y
-    self.tier = 0
-    self.color = 4
+    -- self.tier = 0 -- only used for testing purposes only
+    -- self.color = 4 -- only used for testing purposes only
     self.width = 32
     self.height = 16
     self.inPlay = true
+
+    -- setup particle attached to each Bricks thus must be init for each brick
+    -- init particle system object
+    self.psystem = love.graphics.newParticleSystem(gameTextures['particle'], 64)
+    -- see CS-50 GAMING_230114_081141 for more elaborate explanation
+
+    -- set how long the particle should visible when animated (0.5 to 1 seconds)
+    self.psystem:setParticleLifetime(0.5, 1)
+
+    -- give acceleration left and right evenly but the acceleration only goes down no particle should move up
+    self.psystem:setLinearAcceleration(-15, 0, 15, 80)
+
+    -- set the probability distribution on where the particle should render
+    self.psystem:setEmissionArea('normal', 10, 10)
 end
 
 function Brick:hit()
