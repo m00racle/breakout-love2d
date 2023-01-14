@@ -46,6 +46,7 @@ function PlayView:render()
     -- only render bricks with inPlay = true
     for k, brick in pairs(self.bricks) do
         brick:render()
+        brick:renderParticles()
     end
 
     renderHealth(self.health)

@@ -47,6 +47,7 @@ function PlayViewController:update(dt)
 
     -- check each brick:
     for k, brick in pairs(self.d.bricks) do
+        brick:update(dt)
         -- check collison for inPlay bricks 
         if brick.inPlay and self.d.ball:collides(brick) then
             -- trigger brick hit function:

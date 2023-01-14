@@ -67,6 +67,23 @@ end
 
 function Brick:hit()
     -- : what are need to do when the brick is hit by the ball
+    -- set the color of the particle to be the same as the brick hit by the ball
+    self.psystem:setColors(
+        -- primary 1st color
+        palleteColors[self.color].r / 255,
+        palleteColors[self.color].g / 255,
+        palleteColors[self.color].b / 255,
+        -- tier will only affect the opacity of the particle
+        55 * (self.tier + 1) / 255,
+        -- secondary colors but later in opacity to be 0
+        palleteColors[self.color].r / 255,
+        palleteColors[self.color].g / 255,
+        palleteColors[self.color].b / 255,
+        0
+    )
+    -- set the animation of the particle to be emision
+    self.psystem:emit(64)
+
     -- Play sound
     gameSounds['brick-hit-2']:stop()
     -- NOTE: this to make sure if multiple bricks is hit the sound will not overlap
@@ -115,4 +132,14 @@ function Brick:render()
         -- TODO: PUT THE quads for all brick types into gameFrames
         love.graphics.draw(gameTextures['main'], gameFrames['bricks'][1 + ((self.color - 1)*4) + self.tier], self.x, self.y)
     end
+end
+
+-- add function Brick:update called from PlayViewController:update for each brick to update the animation of particle
+function Brick:update(dt)
+    self.psystem:update(dt)
+end
+
+-- make additional function for brick to animate and reder particles
+function Brick:renderParticles()
+   love.graphics.draw(self.psystem, self.x + 16, self.y + 8) 
 end
