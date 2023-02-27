@@ -31,7 +31,8 @@
             bricks = self.d.bricks,
             health = self.d.health,
             score = self.d.score,
-            ball = self.d.ball
+            ball = self.d.ball,
+            level = self.d.level --pass the level to play state
         })
     end
  end
