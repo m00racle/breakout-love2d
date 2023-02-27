@@ -90,7 +90,8 @@ function PlayViewController:update(dt)
                 paddle = self.d.paddle,
                 bricks = self.d.bricks,
                 health = self.d.health,
-                score = self.d.score
+                score = self.d.score,
+                level = self.d.level -- I forgot to pass this earlier
             })
         else
             -- go to game over
