@@ -54,6 +54,20 @@ function PlayViewController:update(dt)
             brick:hit()
             -- add score (TODO: temp is constant point of 10)
             self.d.score = self.d.score + 10
+
+            -- check if game stage reach victory state:
+            if self:checkVictory() then
+                gameSounds['victory']:play()
+                -- pass the state view to victory
+                gameStates:change('victory', {
+                    level = self.d.level,
+                    paddle = self.d.paddle,
+                    health = self.d.health,
+                    score = self.d.score,
+                    ball = self.d.ball
+                })
+            end
+
             -- call static collision and pass the current brick
             self.d.ball:static_bounce(brick)
             
@@ -87,4 +101,17 @@ function PlayViewController:update(dt)
     if love.keyboard.wasPressed('escape') then
         esc_key()
     end
+end
+
+-- victry checker
+function PlayViewController:checkVictory()
+    -- check if there is still bricks left to play
+    for k, brick in pairs(self.d.bricks) do
+        if brick.inPlay then
+            return false
+        end
+    end
+
+    -- if there are no brick any longer in play
+    return true
 end
