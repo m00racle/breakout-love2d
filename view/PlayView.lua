@@ -27,7 +27,9 @@ function PlayView:enter(params)
     self.health = params.health
     self.score = params.score
     self.ball = params.ball
+    self.level = params.level
 end
+
 function PlayView:exit() end
 
 -- controls:

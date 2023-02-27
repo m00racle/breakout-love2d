@@ -71,3 +71,7 @@ require 'controller/ServeViewController'
 -- put game over:
 require 'view/GameOverView'
 require 'controller/OverViewController'
+
+-- put victory:
+require 'view/VictoryView'
+require 'controller/VictoryViewController'
