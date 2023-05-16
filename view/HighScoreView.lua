@@ -12,4 +12,8 @@ end
 function HighScoreView:enter(params) end
 function HighScoreView:exit() end
 function HighScoreView:control(dt) end
-function HighScoreView:render() end
+function HighScoreView:render() 
+    love.graphics.setFont(gameFonts['large'])
+    love.graphics.printf('High Scores', 0, 20, VIRTUAL_WIDTH, 'center')
+    
+end
