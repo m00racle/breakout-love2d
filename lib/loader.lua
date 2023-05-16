@@ -79,7 +79,9 @@
         ['play'] = function() return PlayView(PlayViewController) end,
         ['serve'] = function() return ServeView(ServeViewController) end,
         ['game-over'] = function() return GameOverView(OverViewController) end,
-        ['victory'] = function() return VictoryView(VictoryViewController) end
+        ['victory'] = function() return VictoryView(VictoryViewController) end,
+        ['high-score'] = function() return HighScoreView(HighScoreController) end,
+        ['enter-score'] = function() return EnterScoreView(EnterScoreController)end
     }
 
     gameStates:change('start')

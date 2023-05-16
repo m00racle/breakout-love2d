@@ -75,3 +75,11 @@ require 'controller/OverViewController'
 -- put victory:
 require 'view/VictoryView'
 require 'controller/VictoryViewController'
+
+-- view highscore
+require 'view/HighScoreView'
+require 'controller/HighScoreController'
+
+-- enter high score
+require 'view/EnterScoreView'
+require 'controller/EnterScoreController'
