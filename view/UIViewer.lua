@@ -31,6 +31,51 @@ function love.draw()
     push:apply('end')
 end
 
+function loadHighScores()
+    -- set identity for the Love2D filesystem to 'breakout'
+    love.filesystem.setIdentity("breakout")
+
+    -- check if the file 'breakout.lst' exists, if not, initialize it with default scores
+    if not love.filesystem.getInfo('breakout.lst') then
+        local scores = ''
+        for i = 10, 1, -1 do
+            scores = scores .. 'CTO\n' -- note .. means concatenation
+            scores = scores .. tostring(i * 1000) .. '\n'
+            -- this will type scores from 10000 to 1000 descending
+        end
+        love.filesystem.write('breakout.lst', scores)
+    end
+
+    -- Flag for whether we're reading a name or not
+    local name = true
+    local currentName = nil
+    local counter = 1
+
+    -- init scores table with at least 10 blank entries
+    local scores = {}
+    for i = 1, 10 do
+        -- each entry is a table with 'name' and 'score' fields
+        scores[i] = {
+            name = nil, 
+            score = nil
+        }
+    end
+
+    -- iterate over each line in the file, filling in names and scores
+    for line in love.filesystem.lines('breakout.lst') do
+        if name then 
+            scores[counter].name = string.sub(line, 1, 3)
+        else
+            scores[counter].score = tonumber(line)
+            counter = counter +1
+        end
+        -- flip the name flag to ensure score inserted for each name inserted
+        name = not name
+    end
+    -- return the loadad scores table
+    return scores
+end
+
 function displayFPS() 
     -- display FPS count in the screen
     -- just comment out the call if you want to disable this 
